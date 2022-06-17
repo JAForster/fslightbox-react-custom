@@ -19,7 +19,7 @@ const SlideNumber = (
     const slideNumberInner = React.createRef();
 
     useEffect(() => {
-        if (slideNumberInner.current.offsetWidth > 55) {
+        if (slideNumberInner.current?.offsetWidth > 55) {
             slideNumberOuter.current.style.justifyContent = 'flex-start';
         }
     }, []);
