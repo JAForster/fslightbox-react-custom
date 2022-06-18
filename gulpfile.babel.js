@@ -1,7 +1,9 @@
 import gulp from 'gulp';
-import sass from 'gulp-sass';
+// import sass from 'gulp-sass';
 import cleanCSS from 'gulp-clean-css';
 import rename from 'gulp-rename';
+
+const sass = require('gulp-sass')(require('sass'));
 
 function buildCSS() {
     return (

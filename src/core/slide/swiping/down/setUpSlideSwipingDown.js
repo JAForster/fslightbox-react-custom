@@ -7,6 +7,11 @@ export function setUpSlideSwipingDown({ core: { slideSwipingDown: self }, resolv
         // If user is zooming with browser built-in pinching there is usually a situation where user first touches the screen
         // with one finger and then with another. In this situation isSwiping is set set to true after first touch.
         // To not run pinch actions an move and up events we are setting isSwiping to false if screen is touched with 2 or more fingers.
+
+        if(!e.props.canSwipe){
+            return;
+        }
+
         (e.touches && e.touches.length > 1)
             ? slideSwipingProps.isSwiping = false
             : actioner.runActions(e);

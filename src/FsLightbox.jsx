@@ -220,7 +220,9 @@ FsLightbox.propTypes = {
     exitFullscreenOnClose: PropTypes.bool,
     loadOnlyCurrentSource: PropTypes.bool,
     openOnMount: PropTypes.bool,
-    slideDistance: PropTypes.number
+    slideDistance: PropTypes.number,
+
+    canSwipe: PropTypes.bool
 };
 
 FsLightbox.defaultProps = {

@@ -30,8 +30,6 @@ export function setUpLightboxOpener(fsLightbox) {
         fillIndexedCollection(fsLightbox, 'sourceMainWrapperTransformers', SourceMainWrapperTransformer);
 
         setUpCore(fsLightbox);
-        console.log("core set up");
-        console.log(fsLightbox);
 
         eventsDispatcher.dispatch('onInit');
 
