@@ -226,7 +226,8 @@ FsLightbox.propTypes = {
 };
 
 FsLightbox.defaultProps = {
-    slideDistance: 0.3
+    slideDistance: 0.3,
+    canSwipe: false
 };
 
 export default FsLightbox;

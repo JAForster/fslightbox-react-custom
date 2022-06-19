@@ -50,6 +50,8 @@ class DemoComponent extends Component {
                 <FsLightbox
                     toggler={this.state.lightboxController.toggler}
                     sources={[
+                        <h1>Test 1</h1>,
+                        <h1>Test 2</h1>,
                         <audio src="/demo/videos/audio.m4a" controls />
                     ]}
                     customAttributes={[

@@ -16,7 +16,7 @@ export function setUpScrollbarRecompensor(
     };
 
     const ifBodyIsHigherThanWindowAddRecompenseToScrollbar = () => {
-        if (document.body.offsetHeight > window.innerHeight) {
+        if (document.body?.offsetHeight > window.innerHeight) {
             document.body.style.marginRight = data.scrollbarWidth + 'px';
         }
     };

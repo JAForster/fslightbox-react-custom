@@ -39,7 +39,7 @@ export function SourceLoadHandler({ elements: { sources }, props, resolve, timeo
     this.handleCustomLoad = () => {
         timeout(() => {
             const source = sources[i].current;
-            sourceLoadActioner.runActions(source?.offsetWidth, source.offsetHeight);
+            sourceLoadActioner.runActions(source?.offsetWidth, source?.offsetHeight);
         });
     };
 }
